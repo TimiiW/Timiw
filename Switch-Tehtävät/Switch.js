@@ -2,7 +2,7 @@ function nappi() {
   var pisteet = 0;
   var sana = document.getElementById('sana').value;
   for(var i = 0; i < sana.length; i++)
-  switch (sana) {
+  switch (sana[i]) {
     case 'a':
     case 'e':
     case 'i':
@@ -49,4 +49,5 @@ function nappi() {
     pisteet+=12;
     break;
   }
+  document.getElementById('vastaus').innerHTML = "Sanan " + sana + " pisteet ovat: " + pisteet;
 }
